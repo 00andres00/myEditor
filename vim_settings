@@ -40,14 +40,3 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 
 set nocompatible
-
-" VIM-PLUG
-"
-call plug#begin()
-	Plug 'sheerun/vim-polyglot'
-  Plug 'preservim/nerdtree'
-  Plug 'lifepillar/vim-mucomplete'
-call plug#end()
-
-
-
