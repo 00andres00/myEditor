@@ -12,11 +12,13 @@ set showmatch
 set signcolumn=yes
 set noexpandtab
 set tabstop=4 shiftwidth=4
-set relativenumber
+set nu
 set laststatus=2
 set noshowmode
+set re=0
 
 " Toggle background transparency
+"
 let t:isTransparent = 0
 function! BGToggleTransparency()
   if t:isTransparent == 0
@@ -28,15 +30,14 @@ function! BGToggleTransparency()
     let t:isTransparent = 0
   endif
 endfunction
-
+" < ------------------------------------------------ >
 
 
 " NERDTree CONFIG
 "
-"
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-
+" < ------------------------------------------------ >
 
 set nocompatible
