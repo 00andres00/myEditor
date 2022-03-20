@@ -2,5 +2,6 @@
 
 
 
-Ejecutar configs_Plugins.sh con source
+Ejecutar configs_Plugins.sh con source.
+
 source configs_Plugins.sh
