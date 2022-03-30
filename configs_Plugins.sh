@@ -7,10 +7,16 @@ function setting() {
 	git clone --depth 1 https://github.com/lifepillar/vim-mucomplete.git ~/.vim/pack/plugins/start/vim-mucomplete
 }
 
-di=$(pwd)
+function main {
+	di=$(pwd)
+	setting
+	cd ../
+	echo ""
+	echo ""
+	echo -e "\t\e[0;31m*** Deleting files ***"
+	echo ""
+	sleep 3
+	rm -rf "./${di##*/}"
+}
 
-setting
-cd ../
-echo -e "\t\e[0;31m*** Deleting files ***"
-sleep 3
-rm -rf "./${di##*/}"
+main
