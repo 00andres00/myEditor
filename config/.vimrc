@@ -1,0 +1,122 @@
+" < ------------------------------------------------ >
+" < ------------------------------------------------ >
+"           MI CONFIGURACIÓN VIM
+" < ------------------------------------------------ >
+" < ------------------------------------------------ >
+
+
+"           GLOBAL
+    let base16colorspace=256
+    set termguicolors
+    set number relativenumber
+
+    set clipboard=unnamed
+    syntax on
+" Escapar
+    inoremap jj <esc>
+" < ------------------------------------------------ >
+
+"           BUFFERS
+"
+    set hidden
+" < ------------------------------------------------ >
+
+"           INDENTACIÓN
+"
+    set shiftwidth=4
+    set tabstop=4
+    set expandtab
+    set autoindent
+    filetype indent on
+" < ------------------------------------------------ >
+
+"           CURSOR LINE
+"
+    set cursorline
+    :highlight Cursorline cterm=bold ctermbg=black
+" < ------------------------------------------------ >
+
+"           BUSQUEDA
+" Resaltado
+    set hlsearch
+" Desabilitar resaltado
+"    nnoremap :noh<return><esc>
+" Resaltar pares [] {} etc.
+    set showmatch
+" sensibilidar
+    set ignorecase
+    set smartcase
+    set incsearch
+" < ------------------------------------------------ >
+" Color scheme
+    set background=dark
+    colorscheme base16-3024
+" < ------------------------------------------------ >
+
+
+"           ATAJOS DE TECLADO
+"
+" Tecla líder
+let mapleader = ","
+
+" Auto completar, cierre de pares
+    inoremap ( ()<Esc>i
+    inoremap { {}<Esc>i
+    inoremap {<CR> {<CR>}<Esc>O
+    inoremap [ []<Esc>i
+    inoremap < <><Esc>i
+    inoremap ' ''<Esc>i
+    inoremap " ""<Esc>i
+" Cierre de etiquetas html
+    autocmd FileType html inoremap ;<Tab> <Esc>F<lyt>o</<C-r>"><Esc>O<Space>
+" < ------------------------------------------------ >
+
+"           LLAMAR SHELL
+"
+    nnoremap - !!$SHELL<Enter>
+" < ------------------------------------------------ >
+
+"           LLAMAR DICCIONARIO ESPAÑOL
+"
+    nnoremap \ :setlocal spell! spelllang=es<Enter>
+" < ------------------------------------------------ >
+
+"           GUIAS
+"
+    inoremap ;g <++>
+    inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+    vnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+    nnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+" < ------------------------------------------------ >
+
+"           PLANTILLAS
+"
+" Comentario de cabezera
+    nnoremap ,h :-1read $HOME/.vim/templates/head<CR>
+" HTML
+    nnoremap ,html :-1read $HOME/.vim/templates/html/skeleton.html<CR>
+" Python
+    nnoremap ,fpy :-1read $HOME/.vim/templates/python/function.py<CR>
+    nnoremap ,mpy :-1read $HOME/.vim/templates/python/imports.py<CR>
+" Bash
+    nnoremap ,fsh :-1read $HOME/.vim/templates/bash/functions.sh<CR>
+    nnoremap ,msh :-1read $HOME/.vim/templates/bash/main.sh<CR>
+    nnoremap ,sh :-1read $HOME/.vim/templates/bash/shebang.sh<CR>
+    " Curl
+    nnoremap ,cg :-1read $HOME/.vim/templates/bash/curlGET<CR>
+    nnoremap ,cp :-1read $HOME/.vim/templates/bash/curlPOST<CR>
+
+" < ------------------------------------------------ >
+
+"           CONFIGURACION POR EXTENCION
+"
+" syntax on en requirements.txt python
+    autocmd BufWritePre *.py :%s/\s\+$//e
+    autocmd BufNewFile,BufRead requirements*.txt set ft=python
+" tabulacion en html
+    autocmd FileType html set shiftwidth=2 tabstop=2
+" tabulacion en css
+    autocmd FileType css set shiftwidth=2 tabstop=2
+" < ------------------------------------------------ >
+
+let g:cssColorVimDoNotMessMyUpdatetime = 1

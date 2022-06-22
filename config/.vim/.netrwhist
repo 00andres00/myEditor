@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/jekyll'
+let g:netrw_dirhist_4='/home/jekyll/lacueva'
+let g:netrw_dirhist_3='/home/jekyll'
+let g:netrw_dirhist_2='/home/jekyll/and0.0bna/_includes'
+let g:netrw_dirhist_1='/home/jekyll/and0.0bna/_layouts'
