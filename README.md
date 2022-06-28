@@ -14,3 +14,5 @@ La carpeta `.vim` contiene tres subcarpetas:
    Contiene algunas plantillas para html, python, bash y una cabecera para comentarios, en el `.vimrc` encuentras los atajos.  
 
 `.vimrc` es un típico fichero de configuración de vim.  
+
+Solo ejecuta el main con `./main.sh` o `bash main.sh`
