@@ -12,7 +12,13 @@
 RECOVERY=recovery_vim
 
 function move() {
-    mv config/{.vim,.vimrc}  $HOME/
+    mv ./src/{vim,vimrc}  $HOME/
+}
+
+function rename() {
+    mv $HOME/vim $HOME/.vim 
+    mv $HOME/vimrc $HOME/.vimrc
+
 }
 
 function recovery() {
@@ -25,8 +31,10 @@ function main() {
     then
         recovery
         move
+        rename
     else
         move
+        rename
     fi
 }
 
