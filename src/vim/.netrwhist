@@ -1,5 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/Users/andres.jacinto/code/python/telegram_bot'
-let g:netrw_dirhist_2='/Users/andres.jacinto/code/python/telegram_bot/app'
-let g:netrw_dirhist_1='/Users/andres.jacinto/code/python/script'
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/hack/.vim'
+let g:netrw_dirhist_5='/Users/andres.jacinto/code/python/bot/telegramBot/src'
+let g:netrw_dirhist_4='/Users/andres.jacinto/code/python/bot/telegramBot'
+let g:netrw_dirhist_3='/Users/andres.jacinto/code/frontend/react/andar-es/src/Components/Product'
+let g:netrw_dirhist_2='/Users/andres.jacinto/code/frontend/react/andar-es/src/pages'
+let g:netrw_dirhist_1='/Users/andres.jacinto'
+let g:netrw_dirhist_0='/Users/andres.jacinto/code/python/selenium/webscraping/walmart/src'
+let g:netrw_dirhist_9='/Users/andres.jacinto/Documents/cheatsheets/cheatsheets_vim_files'
+let g:netrw_dirhist_8='/Users/andres.jacinto/code/proyects/transport/mantenimiento_camiones/docs'
+let g:netrw_dirhist_7='/Users/andres.jacinto/code/proyects/transport/mantenimiento_camiones'
